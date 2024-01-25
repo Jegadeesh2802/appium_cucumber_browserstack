@@ -4,12 +4,10 @@ Feature: Browserstack Sample App
   Scenario Outline: As a user, I can log into the secure area
 
     Given I am on the login page
-    When User add valid credentials to login application
-    Then Allow the user location
-    Then User logout to the application
- 
+    When I login with <username> and <password>
+    Then I should see a flash message saying <message>
 
-      Examples:
-      
-
-
+    Examples:
+      | username | password             | message   |
+      | tomsmith | SuperSecretPassword! | Logging in |
+      | foobar   | barfoo               | Logging in |

@@ -1,8 +1,8 @@
 exports.config = {
     hostname: 'hub-cloud.browserstack.com',
     port: 443,
-    user: "jegadeesh_kQuCty",
-    key: "gzBax7FXx7Gr9TWqp8dL",
+    user: process.env.BROWSERSTACK_USERNAME,
+    key: process.env.BROWSERSTACK_ACCESS_KEY,
     logLevel: 'error',
     bail: 0,
     waitforTimeout: 10000,
