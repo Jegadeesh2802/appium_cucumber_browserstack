@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "wdio": "wdio run config/sample.conf.js"
+        "wdio": "wdio run config/sample.conf.js",
+        "test:browserstack.first.tst:linux": "NODE_ENV=test wdio run config/sample.conf.js"
     },
     "keywords": [],
     "author": "",

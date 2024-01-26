@@ -1,0 +1,32 @@
+name: CI-SANITY-TST
+#on: [push, pull_request]
+on: 
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+        - uses: szenius/set-timezone@v1.1
+          with:
+            timezoneLinux: "America/New_York"
+        - name: Checkout
+          uses: actions/checkout@v2
+        - uses: actions/setup-node@v1
+          with:
+            node-version: 18
+        - name: Install
+          run: npm install
+        - name: Test
+          run: npm run test:browserstack.first.tst:linux
+        - uses: actions/upload-artifact@v1
+          continue-on-error: true
+          if: failure()
+          with:
+            name: logs
+            path: logs
+
+
