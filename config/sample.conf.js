@@ -13,9 +13,9 @@ exports.config = {
         platformName:'android',
         "appium:deviceName":'Google Pixel 6',
         "appium:platformVersion":"12.0",
+        "appium:app": 'bs://5cdcf0d2efc4ccf6465dc8044d53b642d5ed7942',
         // "appium:app": 'bs://02a3a17f0d73b6f74936c3cb75c0ebba101f1eef',//--sample app
         // "appium:app": 'bs://08b7183b36d0a2dfdc4995c30adce65407274adc',--Amazon App
-        "appium:app": 'bs://5cdcf0d2efc4ccf6465dc8044d53b642d5ed7942',
         'bstack:options' : {
             "appiumVersion" : "2.0.0",
             "buildName" : `Wdio Browserstack Cucumber - ${new Date().toDateString()}`,  

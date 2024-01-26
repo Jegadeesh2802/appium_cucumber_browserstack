@@ -1,6 +1,7 @@
 const { Given, When, Then } = require('@wdio/cucumber-framework');
 
-Given(/^I am on the (\w+) page$/, async (page) => {
+
+Given(/^I am on the landing page$/, async () => {
     await $('//android.widget.Button[@resource-id="com.firstmilegeo.collector:id/skip"]').click();
 });
 
