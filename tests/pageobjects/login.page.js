@@ -15,6 +15,24 @@ class LoginPage extends Page {
             ios: $(`//XCUIElementTypeTextField[@name="UserName"]`)
         });
     }
+    get inputUsername () {
+        return selector({
+            android: $(`//android.widget.EditText[contains(@content-desc,"UserName")]`),
+            ios: $(`//XCUIElementTypeTextField[@name="UserName"]`)
+        });
+    }
+    get inputUsername () {
+        return selector({
+            android: $(`//android.widget.EditText[contains(@content-desc,"UserName")]`),
+            ios: $(`//XCUIElementTypeTextField[@name="UserName"]`)
+        });
+    }
+    get inputUsername () {
+        return selector({
+            android: $(`//android.widget.EditText[contains(@content-desc,"UserName")]`),
+            ios: $(`//XCUIElementTypeTextField[@name="UserName"]`)
+        });
+    }
 
     get inputPassword () {
         return selector({

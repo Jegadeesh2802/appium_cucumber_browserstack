@@ -1,8 +1,8 @@
 exports.config = {
     hostname: 'hub-cloud.browserstack.com',
     port: 443,
-    user: "jegadeesh_kQuCty",
-    key: "gzBax7FXx7Gr9TWqp8dL",
+    user: "kavinraj_Mg48Y2",
+    key: "DLy2ZKiscAhc5dDmszhx",
     logLevel: 'error',
     bail: 0,
     waitforTimeout: 10000,
@@ -20,7 +20,7 @@ exports.config = {
     framework: 'cucumber',
     reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
     cucumberOpts: {
-        require: ['./tests/steps/login.steps.js'],
+        require: ['./tests/steps/firstcryApp.steps.js'],
         backtrace: false,
         requireModule: [],
         dryRun: false,
