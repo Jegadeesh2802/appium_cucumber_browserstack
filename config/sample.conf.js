@@ -18,8 +18,8 @@ exports.config = {
         // "appium:app": 'bs://08b7183b36d0a2dfdc4995c30adce65407274adc',--Amazon App
         'bstack:options' : {
             "appiumVersion" : "2.0.0",
-            "buildName" : `Wdio Browserstack Cucumber - ${new Date().toDateString()}`,  
-            "projectName":"Browserstack Test",
+            "buildName" : `Test Build`,  
+            "projectName":"Sample Appium Test",
             "networkProfile": "2g-gprs-good",
         },
     },    
