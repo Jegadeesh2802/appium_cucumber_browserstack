@@ -9,17 +9,18 @@ exports.config = {
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
     services: [['browserstack', {
+        
         testObservability: true,
         testObservabilityOptions: {
             'projectName': "browserstack-webdriverio-appium-cucumber",
             'buildName': "browserstack-webdriverio-appium-cucumber-build",
-            'buildTag': 'WDIO'
+            'buildTag': 'WDIO',
         },
     }]],
     framework: 'cucumber',
     reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
     cucumberOpts: {
-        require: ['./tests/steps/**/*.steps.js'],
+        require: ['./tests/steps/login.steps.js'],
         backtrace: false,
         requireModule: [],
         dryRun: false,
@@ -29,6 +30,6 @@ exports.config = {
         strict: false,
         tagExpression: '',
         timeout: 60000,
-        ignoreUndefinedDefinitions: false
+        ignoreUndefinedDefinitions: false,
     },
 }

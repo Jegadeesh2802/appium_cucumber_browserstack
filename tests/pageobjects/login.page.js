@@ -37,6 +37,22 @@ class LoginPage extends Page {
         })
     }
 
+
+
+
+    get loggedUserName(){
+        return selector({
+            android: $(`//android.widget.TextView[@resource-id="com.firstmilegeo.collector:id/material_drawer_account_header_name"]`)
+        })
+    }
+
+    get loggedUserEmail(){
+        return selector({
+            android: $(`//android.widget.TextView[@resource-id="com.firstmilegeo.collector:id/material_drawer_account_header_email"]`)
+        })
+    }
+
+
     /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password

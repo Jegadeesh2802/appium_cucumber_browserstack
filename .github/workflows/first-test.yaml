@@ -1,4 +1,4 @@
-name: CI-FIRST-TST
+name: CI-SAMPLE-TST
 #on: [push, pull_request]
 on: 
   workflow_dispatch:
