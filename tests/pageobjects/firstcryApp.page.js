@@ -78,7 +78,7 @@ class LoginPage extends Page {
     
     get selectProductAddWishList () {
         return selector({
-            android: $(`//android.widget.TextView[@text="Babyhug Cotton Woven Full Sleeves Checkered Shirt with Inner Tee & Jeans - Red & Blue"]`),
+            android: $(`//android.widget.TextView[@text="Babyhug 100% Cotton Woven Full Sleeves Frill Designed Checked Top & Pant - White & Maroon"]`),
             // ios: $(`//XCUIElementTypeTextField[@name="UserName"]`)
         });
     }
@@ -125,11 +125,19 @@ class LoginPage extends Page {
             // ios: $(`//XCUIElementTypeTextField[@name="UserName"]`)
         });
     }
+
+    get calenderBack () {
+        return selector({
+            android: $(`//android.widget.ImageButton[@content-desc="Previous month"]`),
+            // ios: $(`//XCUIElementTypeTextField[@name="UserName"]`)
+        });
+    }
   
     async submitChildDetails (childName) {
         await this.firstcryAppLanding.click();
         await this.enterChildName.setValue(childName);
         await this.selectCalender.click();
+        await this.calenderBack.click();
         await this.selectDateOfBirth.click();
         await this.submitDateOfBirth.click();
         await this.submitChildInformation.click();
