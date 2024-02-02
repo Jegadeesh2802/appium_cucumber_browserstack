@@ -21,7 +21,7 @@ Then(/^User verify the product name in wishlist$/, async () => {
     const verifyName = await $('//android.widget.TextView[@text="Babyhug 100% Cotton Woven Full Sleeves Frill Designed Checked Top & Pant - White & Maroon"]').getText();
     await expect(verifyName).toEqual('Babyhug 100% Cotton Woven Full Sleeves Frill Designed Checked Top & Pant - White & Maroon');
     console.log(verifyName,'=========verifyName============')
-    await $('//android.view.View[@text=""]').click();
+    // await $('//android.view.View[@text=""]').click();
     await new Promise(resolve => setTimeout(resolve, 5000));
     // await $('//android.view.View[@text=""]').click();
     // await new Promise(resolve => setTimeout(resolve, 5000));

@@ -1,7 +1,7 @@
 @Sample
 Feature: User should search the product and add to cart and verify the product name in cart section
 
-  Scenario Outline: User added the product in shopping cart and verify the product name
+  Scenario Outline: Verify shopping cart Item name
 
     Given User setup the profile of the baby
     When User search the product in search bar
