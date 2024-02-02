@@ -3,7 +3,7 @@ Feature: User should set the profile details
 
   Scenario Outline: User added profile details
 
-    Given User setup the profile of the baby
+    Given User submit the child name
     Then User submit the profile details
   
 

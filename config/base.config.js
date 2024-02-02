@@ -20,7 +20,7 @@ exports.config = {
     framework: 'cucumber',
     reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
     cucumberOpts: {
-        require: ['./tests/steps/firstcryApp.*.js'],
+        require: ['./tests/steps/firstcryApp/*.js'],
         // require: ['./tests/steps/demoApp.steps.js'],
 
         backtrace: false,
