@@ -144,6 +144,22 @@ class LoginPage extends Page {
 
     }
 
+    async submitChildDetails2 (childName) {
+        await this.firstcryAppLanding.click();
+        await this.enterChildName.setValue(childName);
+        await this.selectCalender.click();
+        await this.calenderBack.click();
+
+    }
+
+    async submitDetails (childName) {
+        await this.selectDateOfBirth.click();
+        await this.submitDateOfBirth.click();
+        await this.submitChildInformation.click();
+
+    }
+
+
     async userSearchProductInSearchBar(productName){
         await this.selectProductGroup.click();
         await this.clickCloseDialog.click();

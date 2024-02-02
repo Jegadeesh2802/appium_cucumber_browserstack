@@ -3,7 +3,7 @@ config.cucumberOpts.tagExpression = "@Sample"
 exports.config = {
     ...config,
     specs: [
-        './tests/features/firstcryApp.feature'
+        './tests/features/firstcryApp.*.feature'
         // './tests/features/demoApp.feature'
 
     ],
