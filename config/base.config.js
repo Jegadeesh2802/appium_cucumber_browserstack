@@ -12,8 +12,8 @@ exports.config = {
         
         testObservability: true,
         testObservabilityOptions: {
-            'projectName': "browserstack-webdriverio-appium-cucumber",
-            'buildName': "browserstack-webdriverio-appium-cucumber-build",
+            'projectName': "First cry application",
+            'buildName': "Test-build",
             'buildTag': 'WDIO',
         },
     }]],
