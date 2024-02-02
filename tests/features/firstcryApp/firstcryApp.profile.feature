@@ -7,10 +7,9 @@ Feature: User should set the profile details
     Then User submit the profile details
   
 
-
       Examples:
-      | username               | password |
-      | jegadeeshkit@gmail.com | 12345678 |
+      | child name |
+      | Jegadeesh  |
       
 
 
