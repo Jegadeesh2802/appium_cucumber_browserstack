@@ -38,7 +38,7 @@ jobs:
           with:
             username: 07C307CA10C041D38DB399C56E1A1EDA
             password: b8b00b1d4839d43c8e7c90060ff2e5d49c93eba268693dc5342451a8de4da8df
-            testFormat: "cucumber"
-            testPaths: "./tests/*.xml"
+            testFormat: "junit"
+            testPaths: "**/tests/*.xml"
             testExecKey: "TES-63"
             projectKey: "ClientProject-1"
