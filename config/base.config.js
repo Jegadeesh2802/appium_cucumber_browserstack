@@ -18,20 +18,7 @@ exports.config = {
         },
     }]],
     framework: 'cucumber',
-    reporters: [
-        // Like this with the default options
-        'cucumberjs-json',
-        // OR like this if you want to set the folder and the language
-        [
-          'cucumberjs-json',
-          {
-            jsonFolder: '.tmp/new/',
-            language: 'en',
-          },
-        ],
-      ],
-
-    // reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
+    reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
     cucumberOpts: {
         require: ['./tests/steps/firstcryApp/firstcryApp.profile.steps.js'],
         // require: ['./tests/steps/demoApp.steps.js'],
