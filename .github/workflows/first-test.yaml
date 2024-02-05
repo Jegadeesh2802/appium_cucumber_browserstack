@@ -9,11 +9,11 @@ on:
     inputs:
       testExecKey: 
         description: 'Test firstcry App'
-        default: ''
+        default: 'https://jdeesh123.atlassian.net/browse/TES-63'
         required: true
       projectKey:
         description: 'Test firstcry App'
-        default: ''
+        default: 'https://jdeesh123.atlassian.net/jira/software/c/projects/TES/boards/2'
         required: true
 
 jobs:
@@ -43,9 +43,5 @@ jobs:
             PROJECT_KEY: "${{ secrets.JIRA_PROJECT_KEY }}"
             TEST_ENVIRONMENTS: "NODE_${{ matrix.node-version }}"
           run: npm run test:browserstack.first.tst:linux
-        - uses: actions/upload-artifact@v1
-          continue-on-error: true
-          if: failure()
-          with:
-            name: logs
-            path: logs
+        - name: xray-action
+          uses: mikepenz/xray-action@v3.0.4
