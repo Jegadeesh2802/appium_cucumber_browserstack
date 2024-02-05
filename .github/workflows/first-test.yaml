@@ -31,16 +31,7 @@ jobs:
             node-version: 18
         - name: Install
           run: npm install
-        - name: Test
-          env:
-            USERNAME: jega deesh
-            PASSWORD: Jegadeesh123@
-            XRAY_CLOUD: "false"
-            XRAY_BASE_URL: https://jdeesh123.atlassian.net/
-            TEST_PATHS: "**/xray-report.xml"
-            TEST_PLAN_KEY: "https://jdeesh123.atlassian.net/browse/TES-63"
-            PROJECT_KEY: "https://jdeesh123.atlassian.net/jira/software/c/projects/TES/boards/2"
-            TEST_ENVIRONMENTS: "NODE_${{ matrix.node-version }}"
+        - name: Test    
           run: npm run test:browserstack.first.tst:linux
         - name: "Import results to Xray"
           uses: mikepenz/xray-action@v3.0.4
