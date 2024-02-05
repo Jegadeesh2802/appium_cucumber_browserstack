@@ -33,14 +33,13 @@ jobs:
           run: npm install
         - name: Test
           env:
-            USERNAME: ${{ secrets.JIRA_USERNAME }}
-            PASSWORD: ${{ secrets.JIRA_PASSWORD }}
+            USERNAME: jega deesh
+            PASSWORD: Jegadeesh123@
             XRAY_CLOUD: "false"
-            XRAY_BASE_URL: ${{ secrets.JIRA_BASEURL }}
-            TEST_FORMAT: "junit"
+            XRAY_BASE_URL: https://jdeesh123.atlassian.net/
             TEST_PATHS: "**/xray-report.xml"
-            TEST_PLAN_KEY: "${{ secrets.JIRA_TEST_PLAN_KEY }}"
-            PROJECT_KEY: "${{ secrets.JIRA_PROJECT_KEY }}"
+            TEST_PLAN_KEY: "https://jdeesh123.atlassian.net/browse/TES-63"
+            PROJECT_KEY: "https://jdeesh123.atlassian.net/jira/software/c/projects/TES/boards/2"
             TEST_ENVIRONMENTS: "NODE_${{ matrix.node-version }}"
           run: npm run test:browserstack.first.tst:linux
         - name: xray-action
