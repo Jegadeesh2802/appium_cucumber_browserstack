@@ -13,7 +13,7 @@ exports.config = {
         testObservability: true,
         testObservabilityOptions: {
             'projectName': "First cry application",
-            'buildName': "Test-build",
+            'buildName': "PROFILE AND SHOPPING CART TEST RUN",
             'buildTag': 'WDIO',
         },
     }]],
